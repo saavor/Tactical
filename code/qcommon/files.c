@@ -3598,6 +3598,7 @@ static void FS_CheckPak0( void )
 	{
 		char errorText[MAX_STRING_CHARS] = "";
 
+		// Missing pak0.pk3 file
 		if((foundPak & 0x01) != 0x01)
 		{
 			Q_strcat(errorText, sizeof(errorText),
@@ -3605,6 +3606,7 @@ static void FS_CheckPak0( void )
 					"from your legitimate Q3 CDROM. ");
 		}
 
+		// Missing point release files
 		if((foundPak & 0x1fe) != 0x1fe)
 		{
 			Q_strcat(errorText, sizeof(errorText),
@@ -3612,6 +3614,7 @@ static void FS_CheckPak0( void )
 					"re-install the 1.32 point release. ");
 		}
 
+		// Check if executable is in the correct place and base dir is readable
 		Q_strcat(errorText, sizeof(errorText),
 				va("Also check that your ioq3 executable is in "
 					"the correct place and that every file "
