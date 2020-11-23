@@ -1329,7 +1329,7 @@ void Cvar_Register(vmCvar_t *vmCvar, const char *varName, const char *defaultVal
 	// There is code in Cvar_Get to prevent CVAR_ROM cvars being changed by the
 	// user. In other words CVAR_ARCHIVE and CVAR_ROM are mutually exclusive
 	// flags. Unfortunately some historical game code (including single player
-	// baseq3) sets both flags. We unset CVAR_ROM for such cvars.
+	// basetac) sets both flags. We unset CVAR_ROM for such cvars.
 	if ((flags & (CVAR_ARCHIVE | CVAR_ROM)) == (CVAR_ARCHIVE | CVAR_ROM)) {
 		Com_DPrintf( S_COLOR_YELLOW "WARNING: Unsetting CVAR_ROM from cvar '%s', "
 			"since it is also CVAR_ARCHIVE\n", varName );

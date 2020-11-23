@@ -96,8 +96,8 @@ if [ -d ${BUILD_DIR} ]; then
 
 	for EXEC_SO in cgamesparc.so qagamesparc.so uisparc.so cgamex86.so qagamex86.so uix86.so
 	do
-		if [ -f ${BUILD_DIR}/baseq3/${EXEC_SO} ]; then
-        		${INSTALL_BIN} ${BUILD_DIR}/baseq3/${EXEC_SO} ${PKG_BUILD_DIR}/baseq3/${EXEC_SO}
+		if [ -f ${BUILD_DIR}/basetac/${EXEC_SO} ]; then
+        		${INSTALL_BIN} ${BUILD_DIR}/basetac/${EXEC_SO} ${PKG_BUILD_DIR}/basetac/${EXEC_SO}
 		fi
 		if [ -f ${BUILD_DIR}/missionpack/${EXEC_SO} ]; then
         		${INSTALL_BIN} ${BUILD_DIR}/missionpack/${EXEC_SO} ${PKG_BUILD_DIR}/missionpack/${EXEC_SO}
@@ -106,8 +106,8 @@ if [ -d ${BUILD_DIR} ]; then
 
 	for EXEC_VM in cgame.qvm qagame.qvm ui.qvm
 	do
-		if [ -f ${BUILD_DIR}/baseq3/vm/${EXEC_VM} ]; then
-        		${INSTALL_BIN} ${BUILD_DIR}/baseq3/vm/${EXEC_VM} ${PKG_BUILD_DIR}/baseq3/vm/${EXEC_VM}
+		if [ -f ${BUILD_DIR}/basetac/vm/${EXEC_VM} ]; then
+        		${INSTALL_BIN} ${BUILD_DIR}/basetac/vm/${EXEC_VM} ${PKG_BUILD_DIR}/basetac/vm/${EXEC_VM}
 		fi
 		if [ -f ${BUILD_DIR}/missionpack/vm/${EXEC_VM} ]; then
         		${INSTALL_BIN} ${BUILD_DIR}/missionpack/vm/${EXEC_VM} ${PKG_BUILD_DIR}/missionpack/vm/${EXEC_VM}

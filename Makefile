@@ -108,15 +108,15 @@ VERSION=1.36
 endif
 
 ifndef CLIENTBIN
-CLIENTBIN=ioquake3
+CLIENTBIN=tactical
 endif
 
 ifndef SERVERBIN
-SERVERBIN=ioq3ded
+SERVERBIN=tacded
 endif
 
 ifndef BASEGAME
-BASEGAME=baseq3
+BASEGAME=basetac
 endif
 
 ifndef BASEGAME_CFLAGS
@@ -132,7 +132,7 @@ MISSIONPACK_CFLAGS=-DMISSIONPACK
 endif
 
 ifndef COPYDIR
-COPYDIR="/usr/local/games/quake3"
+COPYDIR="/usr/local/games/tactical"
 endif
 
 ifndef COPYBINDIR

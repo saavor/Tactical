@@ -593,7 +593,7 @@ issues.
 #define FS_GENERAL_REF	0x01
 #define FS_UI_REF		0x02
 #define FS_CGAME_REF	0x04
-// number of id paks that will never be autodownloaded from baseq3/missionpack
+// number of id paks that will never be autodownloaded from basetac/missionpack
 #define NUM_ID_PAKS		9
 #define NUM_TA_PAKS		4
 

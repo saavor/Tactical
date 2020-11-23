@@ -1085,9 +1085,9 @@ srcHandle_t S_AL_SrcAlloc( alSrcPriority_t priority, int entnum, int channel )
 			}
 		}
 
-		// The channel system is not actually adhered to by baseq3, and not
+		// The channel system is not actually adhered to by basetac, and not
 		// implemented in snd_dma.c, so while the following is strictly correct, it
-		// causes incorrect behaviour versus defacto baseq3
+		// causes incorrect behaviour versus defacto basetac
 #if 0
 		// Is it an exact match, and not on channel 0?
 		if((curSource->entity == entnum) && (curSource->channel == channel) && (channel != 0))

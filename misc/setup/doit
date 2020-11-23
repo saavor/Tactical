@@ -69,15 +69,15 @@ done
 for arch in "${archs[@]}"; do
 	dst=image/tmp
 	mkdir $dst
-	mkdir $dst/baseq3 $dst/demoq3 $dst/missionpack
+	mkdir $dst/basetac $dst/demoq3 $dst/missionpack
 	install -m 755 $topdir/build/release-linux-$arch/ioquake3.$arch $dst/ioquake3.$arch
 	install -m 755 $topdir/build/release-linux-$arch/ioq3ded.$arch $dst/ioq3ded.$arch
 	install -m 755 $topdir/build/release-linux-$arch/renderer_opengl1_$arch.so $dst/renderer_opengl1_$arch.so
 	install -m 755 $topdir/build/release-linux-$arch/renderer_opengl2_$arch.so $dst/renderer_opengl2_$arch.so
-	install -m 644 $topdir/build/release-linux-$arch/baseq3/*.so $dst/baseq3
+	install -m 644 $topdir/build/release-linux-$arch/basetac/*.so $dst/basetac
 	install -m 644 $topdir/build/release-linux-$arch/missionpack/*.so $dst/missionpack
 	for i in cgame qagame ui; do
-		ln -s ../baseq3/$i$arch.so $dst/demoq3
+		ln -s ../basetac/$i$arch.so $dst/demoq3
 	done
 
 	tar --owner=root --group=root -C $dst -cf ./image/ioquake3.$arch.tar .
@@ -93,7 +93,7 @@ if [ -e ./idpatchpk3s.tar -a -e ./idtapatchpk3s.tar ]; then
 elif [ -e quake3-latest-pk3s.zip ]; then
 	unzip quake3-latest-pk3s.zip
 	chmod 644 quake3-latest-pk3s/*/*.pk3
-	tar -C quake3-latest-pk3s/baseq3 -cf image/idpatchpk3s.tar .
+	tar -C quake3-latest-pk3s/basetac -cf image/idpatchpk3s.tar .
 	tar -C quake3-latest-pk3s/missionpack -cf image/idtapatchpk3s.tar .
 	rm -r quake3-latest-pk3s
 	install -m 644 id_patch_pk3s_Q3A_EULA.txt image/id_patch_pk3s_Q3A_EULA.txt

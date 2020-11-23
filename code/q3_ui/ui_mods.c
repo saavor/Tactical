@@ -123,7 +123,7 @@ static void UI_Mods_LoadMods( void ) {
 	s_mods.descriptionPtr = s_mods.description;
 	s_mods.fs_gamePtr = s_mods.fs_game;
 
-	// always start off with baseq3
+	// always start off with basetac
 	s_mods.list.numitems = 1;
 	s_mods.list.itemnames[0] = s_mods.descriptionList[0] = "Quake III Arena";
 	s_mods.fs_gameList[0] = "";

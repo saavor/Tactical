@@ -30,7 +30,7 @@ The basic flow looks like this:
   the updater refuses to continue.
 - The manifest looks like this: three lines per item...
 
-Contents/MacOS/baseq3/uix86_64.dylib
+Contents/MacOS/basetac/uix86_64.dylib
 332428
 a49bbe77f8eb6c195265ea136f881f7830db58e4d8a883b27f59e1e23e396a20
 

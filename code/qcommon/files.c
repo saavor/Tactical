@@ -60,7 +60,7 @@ along with "home path" and "cd path" for game content.
 
 
 The "base game" is the directory under the paths where data comes from by default, and
-can be either "baseq3" or "demoq3".
+can be either "basetac" or "demoq3".
 
 The "current game" may be the same as the base game, or it may be the name of another
 directory under the paths that should be searched for files before looking in the base game.
@@ -91,8 +91,8 @@ calls to FS_AddGameDirectory
 Additionally, we search in several subdirectories:
 current game is the current mode
 base game is a variable to allow mods based on other mods
-(such as baseq3 + missionpack content combination in a mod for instance)
-BASEGAME is the hardcoded base game ("baseq3")
+(such as basetac + missionpack content combination in a mod for instance)
+BASEGAME is the hardcoded base game ("basetac")
 
 e.g. the qpath "sound/newstuff/test.wav" would be searched for in the following places:
 
