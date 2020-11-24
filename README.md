@@ -1,4 +1,4 @@
-![Build](https://github.com/ioquake/ioq3/workflows/Build/badge.svg)
+![Build](https://github.com/saavor/Tactical/workflows/Build/badge.svg)
 
                    ,---------------------------------------.
                    |   _                     _       ____  |
