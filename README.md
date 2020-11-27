@@ -1,16 +1,7 @@
+# Tactical
 ![Build](https://github.com/saavor/Tactical/workflows/Build/badge.svg)
 
-                   ,---------------------------------------.
-                   |   _                     _       ____  |
-                   |  (_)___  __ _ _  _ __ _| |_____|__ /  |
-                   |  | / _ \/ _` | || / _` | / / -_)|_ \  |
-                   |  |_\___/\__, |\_,_\__,_|_\_\___|___/  |
-                   |            |_|                        |
-                   |                                       |
-                   `--------- https://ioquake3.org --------'
-
-The intent of this project is to provide a baseline Quake 3 which may be used
-for further development and baseq3 fun.
+This project is a game engine based of of the Quake 3 Arena soruce code (more specifically ioquake3)
 Some of the major features currently implemented are:
 
   * SDL 2 backend
@@ -33,7 +24,7 @@ Some of the major features currently implemented are:
   * PNG support
   * Many, many bug fixes
 
-The map editor and associated compiling tools are not included. We suggest you
+The map editor and associated compiling tools are not included, yet. We suggest you
 use a modern copy from http://icculus.org/gtkradiant/.
 
 The original id software readme that accompanied the Q3 source release has been
