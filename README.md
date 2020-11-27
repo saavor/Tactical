@@ -1,7 +1,7 @@
 # Tactical
 ![Build](https://github.com/saavor/Tactical/workflows/Build/badge.svg)
 
-This project is a game engine based of of the Quake 3 Arena soruce code (more specifically ioquake3)
+This project is a game engine based off of the Quake 3 Arena soruce code (more specifically ioquake3)
 Some of the major features currently implemented are:
 
   * SDL 2 backend
