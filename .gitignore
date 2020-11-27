@@ -39,3 +39,7 @@ profile
 *.sdf
 *.opensdf
 *.suo
+
+# Visual Studio Code
+####################
+.vscode
