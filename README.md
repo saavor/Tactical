@@ -35,8 +35,8 @@ More documentation including a Player's Guide and Sysadmin Guide is on:
 http://wiki.ioquake3.org/
 
 If you've got issues that you aren't sure are worth filing as bugs, or just
-want to chat, please visit our forums:
-http://discourse.ioquake.org
+want to chat, please come to our discord server:
+https://discord.gg/PkecRDrTDy
 
 # Thank You:
 
