@@ -141,7 +141,7 @@ IOQ3_MP_CGAME_ARCHS=""
 IOQ3_MP_GAME_ARCHS=""
 IOQ3_MP_UI_ARCHS=""
 
-BASEDIR="basetac"
+BASEDIR="baseq3"
 MISSIONPACKDIR="missionpack"
 
 CGAME="cgame"
@@ -165,7 +165,7 @@ PKGINFO="APPLIOQ3"
 
 OBJROOT="build"
 #BUILT_PRODUCTS_DIR="${OBJROOT}/${TARGET_NAME}-darwin-${CURRENT_ARCH}"
-PRODUCT_NAME="ioquake3"
+PRODUCT_NAME="tactical"
 WRAPPER_EXTENSION="app"
 WRAPPER_NAME="${PRODUCT_NAME}.${WRAPPER_EXTENSION}"
 CONTENTS_FOLDER_PATH="${WRAPPER_NAME}/Contents"
@@ -347,7 +347,7 @@ PLIST="${PLIST}
     <key>NSPrincipalClass</key>
     <string>NSApplication</string>
     <key>NSHighResolutionCapable</key>
-    <false/>
+    <string>True</string>
 </dict>
 </plist>
 "
